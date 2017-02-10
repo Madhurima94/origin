@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> ASSIGNMENT ON BOOTSTRAP </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<nav class="navbar navbar-default navbar-fixed-top navbar-right">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Promact</a>
+    </div>
+  
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">Home</a></li>
+     
+     
+       <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Product 1</a></li>
+            <li><a href="#">Product 2</a></li>
+            <li><a href="#">Product 3</a></li>
+          </ul>
+        </li>
+
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#Get In Touch">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+  
+
+	<div id="services" class="jumbotron text-center" class="container-fluid">
+  	<h1>Services</h1>
+
+	<p> Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. 
+Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. </p>
+</div>
+
+	<div class="container">
+	<div class="jumbotron">
+	 <div class="row">
+	   
+	
+  
+
+<div class="col-md-4 col-xm-12" style="text-align: center">
+		<span class="glyphicon glyphicon-phone" style="font-size:180px" ></span>
+		
+
+	     <h3> Mobile First </h3>
+	
+		<p> Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. Lorum Ipsum services dummy content.
+Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. </p>
+	</div>
+   
+	<div class="col-md-4 col-xm-12" style="text-align: center">
+	     <span class="glyphicon glyphicon-resize-full"  style="font-size:180px"</span>
+		<h3> Responsive for all devices </h3>
+	   		<p> Lorum Ipsum services dummy content.  Lorum Ipsum services dummy content.  Lorum Ipsum services dummy content.
+ Lorum Ipsum services dummy content.  Lorum Ipsum services dummy content. </p>
+	
+	</div>
+    
+    <div class="col-md-4 col-xm-12" style="text-align: center">
+	<span class="glyphicon glyphicon-gift"  style="font-size:180px"</span>
+      <h3>Open source</h3> 
+      <p>Lorum Ipsum services dummy content.  Lorum Ipsum services dummy content.  Lorum Ipsum services dummy content. 
+Lorum Ipsum services dummy content. Lorum Ipsum services dummy content.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr>
+
+<div id="Get In Touch">
+<div class="jumbotron text-center">
+  	<h4 style="font-size:300%">Get In Touch</h4>
+		<p> Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. Lorum Ipsum services dummy content.
+Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. </p>
+
+<div class="well">
+   
+ <ul class="nav nav-tabs">
+     
+ <li class="active"><a href="#contact" data-toggle="tab">Contact</a></li>
+  
+    <li><a href="#profile" data-toggle="tab">Map</a></li>
+   
+ </ul>
+   
+ <div id="myTabContent" class="tab-content">
+    
+  <div class="tab-pane active in" id="contact">
+       
+ <form action="javascript:alert('Thank You')">  
+<div align="left">
+    <label for="name">Name</label><br >   
+  <input type="text" id="name" style="width:69%"><br >  </div>
+<div align="left">
+    <label for="message">Message</label><br >   
+   <textarea rows="5" cols="79%" id="message"></textarea><br >    </div>
+  <input type="submit" value="Submit">  
+
+
+   </form>
+</form>
+</form>
+</div>       
+
+
+
+ <div class="tab-pane fade" id="profile">
+    
+	<form id="tab2">
+        	
+
+        
+	<img src="paris.jpg"  width="304" height="236">
+	</form>
+ 
+     </div>
+	
+     
+ 
+      
+</div>
+
+
+</div>
+
+</body>
+
+	
+	
+</html>
+
+
+
