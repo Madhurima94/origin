@@ -12,7 +12,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 	<nav class="navbar navbar-default navbar-fixed-top navbar-right">
-  <div class="container-fluid">
+  <div class="container-fluid" class="col-xs-12 col-lg-4" >
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Promact</a>
     </div>
@@ -38,7 +38,7 @@
 </nav>
   
 
-	<div id="services" class="jumbotron text-center" class="container-fluid">
+	<div id="services" class="jumbotron text-center" class="container-fluid" class="col-xs-12 col-lg-4">
   	<h1>Services</h1>
 
 	<p> Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. 
@@ -52,7 +52,7 @@ Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. </p>
 	
   
 
-<div class="col-md-4 col-xm-12" style="text-align: center">
+<div class="col-xs-12 col-lg-4" style="text-align: center">
 		<span class="glyphicon glyphicon-phone" style="font-size:180px" ></span>
 		
 
@@ -62,7 +62,7 @@ Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. </p>
 Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. </p>
 	</div>
    
-	<div class="col-md-4 col-xm-12" style="text-align: center">
+	<div class="col-xs-12 col-lg-4" style="text-align: center">
 	     <span class="glyphicon glyphicon-resize-full"  style="font-size:180px"</span>
 		<h3> Responsive for all devices </h3>
 	   		<p> Lorum Ipsum services dummy content.  Lorum Ipsum services dummy content.  Lorum Ipsum services dummy content.
@@ -70,7 +70,7 @@ Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. </p>
 	
 	</div>
     
-    <div class="col-md-4 col-xm-12" style="text-align: center">
+    <div class="col-xs-12 col-lg-4" style="text-align: center">
 	<span class="glyphicon glyphicon-gift"  style="font-size:180px"</span>
       <h3>Open source</h3> 
       <p>Lorum Ipsum services dummy content.  Lorum Ipsum services dummy content.  Lorum Ipsum services dummy content. 
@@ -83,7 +83,7 @@ Lorum Ipsum services dummy content. Lorum Ipsum services dummy content.</p>
 <hr>
 
 <div id="Get In Touch">
-<div class="jumbotron text-center">
+<div class="jumbotron text-center" class="col-xs-12 col-lg-4">
   	<h4 style="font-size:300%">Get In Touch</h4>
 		<p> Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. Lorum Ipsum services dummy content.
 Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. </p>
@@ -103,17 +103,12 @@ Lorum Ipsum services dummy content. Lorum Ipsum services dummy content. </p>
   <div class="tab-pane active in" id="contact">
        
  <form action="javascript:alert('Thank You')">  
-
-
-
-
- <a  data-toggle="tooltip" title="Enter your name"> <div align="left">  <label for="name">Name</label><br >   </a>
-  <input type="text" id="name" style="width:69%"><br >  </div>
-
-
-    <a  data-toggle="tooltip" title="Enter message"><div align="left"> <label for="message">Message</label><br >   </a>
-  <textarea rows="5" cols="79%" id="message"></textarea><br >    </div>
-
+<div align="left">
+    <label for="name">Name</label><br >   
+  <input type="text" id="name" style="width:69%" required="true"><br >  </div>
+<div align="left">
+    <label for="message">Message</label><br >   
+   <textarea rows="5" cols="79%" id="message" required="true"></textarea><br >    </div>
   <input type="submit" value="Submit">  
 
 
