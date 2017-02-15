@@ -9,18 +9,18 @@ namespace demo1 {
             a *= 2;
         }
     }
-    class Q {
-        public int mult(ref int b) {
-            b *= 3;
-            return b;
+    class Q : P {
+        public int mult(ref int a) { 
+           a *= 3;
+            return a;
         }
     }
-    class R {
-        public void mult(ref int c) {
-            c *= 5;
+    class R:Q {
+        public void mult(ref int a) {
+            a *= 5;
         }
     }
-    class D {
+    class D : R{
         static void Main(string[] args)
         {
             var i = 1;
