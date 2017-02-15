@@ -8,64 +8,98 @@ namespace RotateArray
 {
     class Program
     {
-       
-        /*
-         * Int16 maximum value is 32676, less than 4 * 10^9
-         */
+        
         static void Main(string[] args)
         {
-
-
-            MatrixRotation();
-            
+            MatrixRotation1();
         }
 
-        private static void MatrixRotation()
+        private static void MatrixRotation1()
         {
-            long N = long.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the number of rows,columns and rotations");
+            string input = Console.ReadLine();
+            string[] arr = input.Split(' ');
+           
+            int r = Convert.ToInt32(arr[0]);
+           
+            int c = Convert.ToInt32(arr[1]);
+           
+            int rotation = Convert.ToInt32(arr[2]);
 
-            long[,] Mat = new long[N,N];
-            for (long i = 0; i < N; i++) {
-                for (long j = 0; j < N; j++) {
-                    Mat[i, j] = long.Parse(Console.ReadLine());
-                }
-            }
-            for (long x = 0; x < N / 2; x++)
+            int[,] mat = new int[r, c];
+            Console.WriteLine("Enter the elements of the array");
+            for (int i = 0; i < r; i++)
             {
-                // Consider elements in group of 4 in 
-                // current square
-                for (long y = x; y < N - x - 1; y++)
+
+
+                for (int j = 0; j < c; j++)
                 {
-                    // store current cell in temp variable
-                    long temp = Mat[x, y];
-
-                    // move values from right to top
-                    Mat[x,y] = Mat[y,N - 1 - x];
-
-                    // move values from bottom to right
-                    Mat[y,N - 1 - x] = Mat[N - 1 - x, N - 1 - y];
-
-                    // move values from left to bottom
-                    Mat[N - 1 - x, N - 1 - y] = Mat[N - 1 - y, x];
-
-                    // assign temp to left
-                    Mat[N - 1 - y, x] = temp;
-                    int rowLength = Mat.GetLength(0);
-                    int colLength = Mat.GetLength(1);
-
-                    for (int i = 0; i < rowLength; i++)
-                    {
-                        for (int j = 0; j < colLength; j++)
-                        {
-                            Console.Write(string.Format("{0} ", Mat[i, j]));
-                        }
-                        Console.Write(Environment.NewLine + Environment.NewLine);
-                    }
-                    Console.ReadLine();
+                    mat[i, j] = int.Parse(Console.ReadLine());
+                   
                 }
             }
+
+            RotateAntiClockwise(mat, rotation);
+
+            for (int i = 0; i < r; i++)
+            {
+                string s = "";
+                for (int j = 0; j < c; j++)
+                    s += mat[i, j] + " ";
+                Console.WriteLine(s.Trim());
+            }
+            Console.ReadLine();
         }
+
       
+
+        public static bool RotateAntiClockwise(int[,] mat, int steps)
+        {
+            if (mat == null) return false;
+
+            int r1 = mat.GetLength(0);  // row
+            int c1 = mat.GetLength(1);  // column 
+
+            int row = 0;
+            int col = 0;
+
+            while (r1 > 1 && c1 > 1)
+            {
+                int circularLength = 2 * r1 + 2 * c1 - 4;
+                int Steps = steps % circularLength;
+
+                for (int step = 0; step < Steps; step++) //  move one step anti-clockwise a time
+                {
+                    int left_corner = mat[row, col]; // left-top corner element
+
+                    for (int columnIndex = col; columnIndex < col + c1 - 1; columnIndex++)
+                        mat[row, columnIndex] = mat[row, columnIndex + 1];
+
+                    int lastColumn = col + c1 - 1;
+                    for (int rowIndex = row; rowIndex < row + r1 - 1; rowIndex++)
+                        mat[rowIndex, lastColumn] = mat[rowIndex + 1, lastColumn];
+
+
+                    int lastRow = row + r1 - 1;
+                    for (int colIndex = col + c1 - 1; colIndex >= col + 1; colIndex--)
+                        mat[lastRow, colIndex] = mat[lastRow, colIndex - 1];
+
+                    for (int rowIndex = row + r1 - 1; rowIndex >= 1 + row; rowIndex--)
+                        mat[rowIndex, col] = mat[rowIndex - 1, col];
+
+                    mat[row + 1, col] = left_corner;
+                }
+
+                row++;
+                col++;
+
+                r1 -= 2;
+                c1 -= 2;
+            }
+
+            return true;
+        }
+        
     }
+    
 }
-      
