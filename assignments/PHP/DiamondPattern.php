@@ -1,7 +1,7 @@
 
 
 <?php
-	 $n=readline("Enter the number of inputs");
+	 $n=readline("Enter the number of rows");
 	 readline_add_history($n);
      $space = 1;
     
