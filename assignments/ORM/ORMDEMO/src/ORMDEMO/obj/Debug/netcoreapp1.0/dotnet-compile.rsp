@@ -1,5 +1,5 @@
---temp-output:c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\obj\Debug\netcoreapp1.0\
---out:c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\bin\Debug\netcoreapp1.0\ORMDEMO.dll
+--temp-output:C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\obj\Debug\netcoreapp1.0\
+--out:C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\bin\Debug\netcoreapp1.0\ORMDEMO.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -114,17 +114,19 @@
 --reference:C:\Users\madhurima\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\madhurima\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\madhurima\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\Model.cs
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\ProductTable.cs
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\Program.cs
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\UpdateTable.cs
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221121522_migration2.cs
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221121522_migration2.Designer.cs
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221122736_migration3.cs
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221122736_migration3.Designer.cs
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221123002_migration4.cs
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221123002_migration4.Designer.cs
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221123827_migration5.cs
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221123827_migration5.Designer.cs
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\ModelModelSnapshot.cs
-c:\users\madhurima\documents\visual studio 2015\Projects\ORMDEMO\src\ORMDEMO\Properties\AssemblyInfo.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Model.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\ProductTable.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Program.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\UpdateTable.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221121522_migration2.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221121522_migration2.Designer.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221122736_migration3.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221122736_migration3.Designer.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221123002_migration4.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221123002_migration4.Designer.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221123827_migration5.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170221123827_migration5.Designer.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170222063103_Migration Database.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\20170222063103_Migration Database.Designer.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Migrations\ModelModelSnapshot.cs
+C:\Users\madhurima\Documents\Visual Studio 2015\Projects\ORMDEMO\src\ORMDEMO\Properties\AssemblyInfo.cs
